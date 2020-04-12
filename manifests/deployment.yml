@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: abhishekjawalipipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: abhishekjawalipipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: abhishekjawalipipelinesjavascriptdocker 
+          image: abhiacraks1.azurecr.io/abhishekjawalipipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
